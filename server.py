@@ -7,7 +7,8 @@ dataBase = []
 class Api(tornado.web.RequestHandler):
     def get(self):
         data = json.dumps(dataBase)
-        self.write(data)
+        #self.write(data)
+        self.write("Bolida is Strong")
 
     def post(self):
         data = json.loads(self.request.body)
